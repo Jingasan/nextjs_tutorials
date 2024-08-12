@@ -2,7 +2,7 @@
  * app/page.tsx
  * Pageファイル
  *
- *　特定のセグメントに対応するPageファイルを配置することで、特定Routeの画面を提供する。
+ * 特定のセグメントに対応するPageファイルを配置することで、特定Routeの画面を提供する。
  */
 import Image from 'next/image'
 
