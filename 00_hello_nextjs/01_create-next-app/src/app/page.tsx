@@ -4,7 +4,7 @@
  *
  * 特定のセグメントに対応するPageファイルを配置することで、特定Routeの画面を提供する。
  */
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -115,5 +115,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
