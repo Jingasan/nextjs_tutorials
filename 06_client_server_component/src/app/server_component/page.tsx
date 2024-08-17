@@ -13,7 +13,11 @@
  */
 export default async function ServerComponent() {
   /**
-   * Next.jsのfetch関数は、少ない設定で適切なデータ取得ができるようにNext.js内部で拡張されている。
+   * Next.jsのfetch関数は、パフォーマンス向上のため、Next.js内部で拡張されている。
+   * ・静的データのキャッシュ
+   *   Next.jsのfetch関数では、何も指定しなければ、静的データの取得と扱われて結果をキャッシュする。
+   *   データ取得結果のキャッシュを作成することで、データソースへのアクセスを減らし、レスポンスを高速化する。
+   *   頻繁に更新される動的データを取得する場合は、fetch関数の第二引数に{cache:"no-store"}を指定する。
    */
   const res = await (await fetch("https://jsonplaceholder.typicode.com/todos/1")).json();
   console.log(res);
