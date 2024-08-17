@@ -1,5 +1,5 @@
 /**
- * ダイナミックルーティング
+ * Dynamic Route Segment - 基本形
  * app/blog1/[slug]/page.tsx
  *
  * http://<hostname>/blog1/{slug}などのようにURLでブログIDなどのパラメータを受け取りたい場合がある。

@@ -1,5 +1,5 @@
 /**
- * ダイナミックルーティング　階層化
+ * Dynamic Route Segment - Catch-all Segment (階層化)
  * app/blog2/[...slugs]/page.tsx
  *
  * http://<hostname>/blog2/{slug1}/{slug2}のように階層的なURLパラメータを受け取るためには、

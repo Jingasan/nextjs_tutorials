@@ -1,5 +1,5 @@
 /**
- * ダイナミックルーティング　パラメータ無し対応
+ * ダイナミックルーティング - Optional Catch-all Segment パラメータ無し対応
  * app/blog3/[[...slugs]]/page.tsx
  *
  * app/blog2/[...slugs]/page.tsxの場合は、
