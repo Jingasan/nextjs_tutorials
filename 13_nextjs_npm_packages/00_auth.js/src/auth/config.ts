@@ -40,8 +40,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
         // credentials: { csrfToken: string, email: string, password: string }
         try {
           // バリデーションチェック
-          console.log(credentials);
-          const { email, password } = credentials;
+          const { email, password } = await signInSchema.parseAsync(credentials);
           // ユーザー情報の検索
           const user = users.find((user) => user.email === email && user.password === password);
           // ユーザー情報の返却
