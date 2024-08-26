@@ -15,7 +15,6 @@ RUN npm run build
 #============================================================
 FROM gcr.io/distroless/nodejs22-debian12:nonroot as releaser
 USER nonroot
-
 WORKDIR /frontend
 
 # Next.jsのインストール
